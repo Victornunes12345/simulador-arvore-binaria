@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulador de Árvore Binária de Busca</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Simulador de Árvore Binária de Busca (ABB)</h1>
+
+  <div class="container">
+    <input type="number" id="valor" placeholder="Digite um número" class="campo" />
+    <button onclick="inserir()" class="botao">Inserir</button>
+    <button onclick="remover()" class="botao">Remover</button>
+    <button onclick="buscar()" class="botao">Buscar</button>
+    <button onclick="mostrarTravessia('in')" class="botao">Travessia Em Ordem</button>
+    <button onclick="mostrarTravessia('pre')" class="botao">Pré-Ordem</button>
+    <button onclick="mostrarTravessia('post')" class="botao">Pós-Ordem</button>
+    <button onclick="buscarBFS()" class="botao">Buscar em Largura (BFS)</button>
+    <button onclick="buscarDFS()" class="botao">Buscar em Profundidade (DFS)</button>
+    <button onclick="limparArvore()" class="botao" style="background-color: #e74c3c;">Limpar Árvore</button>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <script src="style.js"></script>
+</body> 
+</html>
+
